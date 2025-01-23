@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Indian Good Store</title>
+    <link rel="stylesheet" href="checkout.css">
+</head>
+<body>
+    <header>
+        <img src="indian good store.png" alt="Indian Good Store Logo" class="logo">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="cart.html">Cart</a>
+            <a href="checkout.html" class="active">Checkout</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Checkout</h1>
+        <section class="order-summary">
+            <h2>Order Summary</h2>
+            <ul id="checkout-cart-items"></ul>
+            <p id="checkout-total-price"></p>
+        </section>
+
+        <section class="customer-info">
+            <h2>Shipping Information</h2>
+            <form id="checkout-form">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="address">Shipping Address:</label>
+                <input type="text" id="address" name="address" required>
+
+                <label for="city">City:</label>
+                <input type="text" id="city" name="city" required>
+
+                <label for="postal">Postal Code:</label>
+                <input type="text" id="postal" name="postal" required>
+
+                <button type="submit">Confirm Purchase</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Indian Good Store. All rights reserved.</p>
+    </footer>
+
+    <script src="cart.js"></script> <!-- Link to your cart.js -->
+    <script src="checkout.js"></script> <!-- Link to your checkout.js -->
+</body>
+</html>
